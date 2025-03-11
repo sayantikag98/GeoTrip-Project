@@ -82,7 +82,7 @@ cd ../GeoTrip-ExceptionHandler && ./gradlew bootRun
 
 ## 🔑 Security & Authentication    
 Uses JWT-based authentication (Spring Security).    
-All requests must include a Bearer Token (Authorization: Bearer <token>).    
+All requests (except authentication) must include a Bearer Token (Authorization: Bearer <token>).    
 Tokens are validated at API Gateway, and microservices trust headers (X-User-Email, X-User-Role).   
 
 ## 📌 Future Enhancements    
